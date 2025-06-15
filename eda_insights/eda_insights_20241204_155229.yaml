@@ -1,0 +1,72 @@
+correlation_analysis:
+- columns: !!python/tuple
+  - YearsExperience
+  - Age
+  correlation: 0.9872576107444907
+- columns: !!python/tuple
+  - YearsExperience
+  - Salary
+  correlation: 0.97824161848876
+- columns: !!python/tuple
+  - Age
+  - Salary
+  correlation: 0.9745295055554654
+distribution_analysis:
+  Age:
+    is_normal_distribution: true
+    shapiro_wilk_test_p_value: 0.12809076972571595
+  Salary:
+    is_normal_distribution: false
+    shapiro_wilk_test_p_value: 0.018016133393082362
+  YearsExperience:
+    is_normal_distribution: true
+    shapiro_wilk_test_p_value: 0.1489487188922277
+feature_engineering_recommendations: []
+outlier_analysis:
+  Age:
+    lower_bound: 12.125000000000002
+    outlier_count: 0
+    outlier_percentage: 0.0
+    upper_bound: 41.925
+  Salary:
+    lower_bound: -9015.25
+    outlier_count: 0
+    outlier_percentage: 0.0
+    upper_bound: 166280.75
+  YearsExperience:
+    lower_bound: -3.55
+    outlier_count: 0
+    outlier_percentage: 0.0
+    upper_bound: 14.45
+scalability:
+  column_count: 3
+  row_count: 30
+  sparsity_ratio: 0.0
+  total_memory_usage: 0.0008087158203125
+statistical_analysis:
+  categorical_columns: {}
+  numeric_columns:
+    Age:
+      coefficient_of_variation: 0.18963626851477755
+      kurtosis: -0.7652482697150389
+      quantiles:
+        25%: 23.3
+        50%: 25.0
+        75%: 30.75
+      skewness: 0.7301894107558055
+    Salary:
+      coefficient_of_variation: 0.3607019431414852
+      kurtosis: -1.295421086394517
+      quantiles:
+        25%: 56720.75
+        50%: 65237.0
+        75%: 100544.75
+      skewness: 0.35411967922959153
+    YearsExperience:
+      coefficient_of_variation: 0.5341069305513272
+      kurtosis: -1.0122119403325072
+      quantiles:
+        25%: 3.2
+        50%: 4.7
+        75%: 7.7
+      skewness: 0.37956024064804106
